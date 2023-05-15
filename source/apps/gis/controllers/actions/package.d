@@ -1,1 +1,1 @@
-module apps.myname.controllers.actions;
+module apps.gis.controllers.actions;

@@ -1,7 +1,7 @@
-module apps.myname.controllers;
+module apps.gis.controllers;
 
 public { // Packages
-  import apps.myname.controllers.actions;
-  import apps.myname.controllers.components;
-  import apps.myname.controllers.pages;
+  import apps.gis.controllers.actions;
+  import apps.gis.controllers.components;
+  import apps.gis.controllers.pages;
 }

@@ -1,2 +1,2 @@
-# Package 📦 apps.myname.controllers.components
+# Package 📦 apps.gis.controllers.components
 

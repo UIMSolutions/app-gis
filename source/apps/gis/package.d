@@ -1,4 +1,4 @@
-module apps.myname;
+module apps.gis;
 
 mixin(ImportPhobos!());
 
@@ -9,6 +9,6 @@ public { // required uim libraries
 }
 
 public { // admin-myname libraries
-  import apps.myname.controllers;
-  import apps.myname.views;
+  import apps.gis.controllers;
+  import apps.gis.views;
 }
