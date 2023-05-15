@@ -1,6 +1,6 @@
-module apps.myname.views;
+module apps.gis.views;
 
 public { // Packages
-  import apps.myname.views.actions;
-  import apps.myname.views.forms;
+  import apps.gis.views.actions;
+  import apps.gis.views.forms;
 }
