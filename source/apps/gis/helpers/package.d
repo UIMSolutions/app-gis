@@ -1,1 +1,1 @@
-module dbs.myname.helpers;
+module apps.gis.helpers;

@@ -20,6 +20,7 @@ public import langs.javascript;
 public {
   import apps.gis.controllers;
   import apps.gis.helpers;
+  import apps.gis.routers;
   import apps.gis.tests;
   import apps.gis.views;
 }
@@ -29,6 +30,6 @@ static this() {
   gisApp = App
     .name("gisApp")
     .rootPath("/apps/gis")
-    .addRoute(Route("", HTTPMethod.GET, GISIndexPageController));
+    .addRoute(Route("", HTTPMethod.GET, GISIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, GISIndexPageController));
 }
