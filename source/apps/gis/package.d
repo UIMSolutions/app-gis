@@ -30,11 +30,11 @@ public {
   import apps.gis.views;
 }
 
-DApp gisApp;
 static this() {
-  gisApp = App
+  AppRegistry.register(  
+    App
     .name("gisApp")
     .rootPath("/apps/gis")
     .addRoute(Route("", HTTPMethod.GET, GISIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, GISIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, GISIndexPageController)));
 }
