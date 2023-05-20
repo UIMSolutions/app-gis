@@ -30,8 +30,9 @@ public {
   import apps.gis.views;
 }
 
+@safe:
 static this() {
-  AppRegistry.register(  
+  AppRegistry.register("apps.gis",  
     App
     .name("gisApp")
     .rootPath("/apps/gis")
