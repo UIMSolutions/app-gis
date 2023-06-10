@@ -8,7 +8,7 @@ module apps.gis.controllers.pages.error;
 import apps.gis;
 @safe:
 
-class DGISErrorPageController : DAPPPageController {
+class DGISErrorPageController : DPageController {
   mixin(ControllerThis!("GISErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

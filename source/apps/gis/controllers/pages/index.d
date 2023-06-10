@@ -8,7 +8,7 @@ module apps.gis.controllers.pages.index;
 import apps.gis;
 @safe:
 
-class DGISIndexPageController : DAPPPageController {
+class DGISIndexPageController : DPageController {
   mixin(ControllerThis!("GISIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
