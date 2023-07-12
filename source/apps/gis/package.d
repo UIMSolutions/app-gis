@@ -33,9 +33,10 @@ public {
 @safe:
 static this() {
   AppRegistry.register("apps.gis",  
-    App
-    .name("gisApp")
-    .rootPath("/apps/gis")
-    .addRoute(Route("", HTTPMethod.GET, GISIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, GISIndexPageController)));
+    App("gisApp", "/apps/gis")
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
