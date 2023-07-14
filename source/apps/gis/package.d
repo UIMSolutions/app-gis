@@ -34,6 +34,7 @@ public {
 static this() {
   AppRegistry.register("apps.gis",  
     App("gisApp", "/apps/gis")
+      .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
         Route("/", HTTPMethod.GET, IndexPageController)

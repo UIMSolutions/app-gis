@@ -8,8 +8,8 @@ module apps.gis.controllers.pages.index;
 import apps.gis;
 @safe:
 
-class DGISIndexPageController : DPageController {
-  mixin(ControllerThis!("GISIndexPageController"));
+class DIndexPageController : DPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -18,4 +18,4 @@ class DGISIndexPageController : DPageController {
       .view(GISIndexView(this));
   }
 }
-mixin(ControllerCalls!("GISIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));
