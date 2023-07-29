@@ -7,8 +7,10 @@ module apps.gis;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -32,12 +34,18 @@ public {
 
 @safe:
 static this() {
-  AppRegistry.register("apps.gis",  
-    App("gisApp", "/apps/gis")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
-    );
+  auto myApp = App("gisApp", "apps/gis");
+
+  with(myApp) {
+    importTranslations;
+    addControllers([
+      "gis.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, IndexPageController),
+      Route("/", HTTPMethod.GET, IndexPageController)
+    ); 
+  }
+  
+  AppRegistry.register("apps.gis", myApp);
 }
